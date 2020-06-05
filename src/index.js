@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({ 
+        body: JSON.stringify({
           "likes": toy.likes + 1 }),
       };
     fetch(`http://localhost:3000/toys/${toy.id}`, configObj)
